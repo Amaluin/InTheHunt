@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Abyssal Front: South Pole — тестовый уровень</title>
+  <style>
+    html, body { margin: 0; height: 100%; background: #05080d; color: #8fb4c6; font: 13px/1.5 system-ui, sans-serif; }
+    body { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; }
+    canvas { display: block; image-rendering: pixelated; box-shadow: 0 0 0 1px #1d3a4a, 0 10px 40px #000; }
+    .help { text-align: center; max-width: 960px; }
+    kbd { padding: 0 5px; border: 1px solid #2c4a5c; border-radius: 3px; background: #0c1822; color: #d8eef8; font: 12px monospace; }
+  </style>
+</head>
+<body>
+  <canvas id="screen"></canvas>
+  <div class="help">
+    <kbd>WASD</kbd>/<kbd>стрелки</kbd> движение · <kbd>J</kbd>/<kbd>Z</kbd>/<kbd>Space</kbd> оружие + бомба (удержание) ·
+    <kbd>K</kbd>/<kbd>X</kbd> только бомба · <kbd>Esc</kbd> пауза · <kbd>M</kbd> звук ·
+    <kbd>F1</kbd> отладка (в ней <kbd>G</kbd> бессмертие, <kbd>F2</kbd> к боссу) · геймпад поддерживается
+  </div>
+  <script src="js/atlas.js"></script>
+  <script src="js/font.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/game.js"></script>
+</body>
+</html>
